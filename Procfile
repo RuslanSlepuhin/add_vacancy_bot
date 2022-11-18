@@ -1,1 +1,1 @@
-worker: python mvp_connect_talking_bot.py
+worker: python add_vacancy_bot.py
