@@ -19,8 +19,8 @@ token = os.getenv('token')
 database = os.getenv('database')
 user = os.getenv('user')
 password = os.getenv('password')
-host = 'ec2-54-220-255-121.eu-west-1.compute.amazonaws.com'
-port = '5432'
+host = os.getenv('host')
+port = os.getenv('port')
 #
 # token = config['Token']['token']
 # database = config['DB']['database']
