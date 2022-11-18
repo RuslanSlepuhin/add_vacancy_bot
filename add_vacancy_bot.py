@@ -1,7 +1,6 @@
 import os
 from datetime import datetime
 
-import aiogram
 from aiogram import Bot, Dispatcher, types
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
 import logging
@@ -20,8 +19,8 @@ token = os.getenv('token')
 database = os.getenv('database')
 user = os.getenv('user')
 password = os.getenv('password')
-host = os.getenv('host')
-port = os.getenv('port')
+host = 'ec2-54-220-255-121.eu-west-1.compute.amazonaws.com'
+port = '5432'
 #
 # token = config['Token']['token']
 # database = config['DB']['database']
