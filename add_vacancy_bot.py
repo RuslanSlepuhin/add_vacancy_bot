@@ -16,19 +16,19 @@ import psycopg2
 config = configparser.ConfigParser()
 config.read("./settings/config.ini")
 
-# token = os.getenv('token')
-# database = os.getenv('database')
-# user = os.getenv('user')
-# password = os.getenv('password')
-# host = os.getenv('host')
-# port = os.getenv('port')
-
-token = config['Token']['token']
-database = config['DB']['database']
-user = config['DB']['user']
-password = config['DB']['password']
-host = config['DB']['host']
-port = config['DB']['port']
+token = os.getenv('token')
+database = os.getenv('database')
+user = os.getenv('user')
+password = os.getenv('password')
+host = os.getenv('host')
+port = os.getenv('port')
+#
+# token = config['Token']['token']
+# database = config['DB']['database']
+# user = config['DB']['user']
+# password = config['DB']['password']
+# host = config['DB']['host']
+# port = config['DB']['port']
 
 logging.basicConfig(level=logging.INFO)
 bot = Bot(token=token)
